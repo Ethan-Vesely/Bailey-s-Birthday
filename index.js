@@ -204,25 +204,25 @@ function activateSound() { //function for playing the sound
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 15: //logan cases 15-19
-            number = '"You are handsome" - Logan';
+            number = '"As long as you have been in my life, it has felt like a dream that I never wish to wake up from" - Logan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 16: 
-            number = '"You are honest" - Logan';
+            number = '"You are my shiny pokemon because I am so lucky to have found you" - Logan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 17: 
-            number = '"You are loving" - Logan';
+            number = '"You make my life complete" - Logan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 18: 
-            number = '"You are smart" - Logan';
+            number = '"You always listen to anything I have to say and know exactly what to say when I need to hear it" - Logan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
