@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailey's Birthday</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="Images/bailey_icon.png" type="image/gif" sizes="32x32">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="main_heading">Happy Birthday Bailey!</h1>
+
+        <div class="navigation">
+            <button id="lightSwitch" onclick="light()">Alt Mode</button>
+            <button id="nav1" class="navBox navHover nav-active" onclick="window.location.href='index.html'">Happy Birthday!</button>
+            <button id="nav2" class="navBox navHover" onclick="window.location.href='wishes.html'">Birthday Wishes</button>
+            <button id="nav3" class="navBox navHover" onclick="window.location.href='gallery.html'">Gallery</button>
+            <button id="nav4" class="navBox navHover" onclick="window.location.href='compliment.html'">Compliment Generator</button>
+        </div><br><br><br>
+<br><br><br>
+
+        <button id="vinyl">Happy<div id="circle"></div>Birthday</button><br><br><br><br> <!--first record-->
+        
+        <audio controls id ="playMusic"> 
+        <source src="Audio/hb scratch demo 1 (my style).wav" type="audio/mpeg">
+        </audio>
+
+        <audio controls id="stopMusic">
+        <source src="Audio/Record Scratch Sound Effect.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="holder"><button id="groover" onclick="activateSound();">Activate Groover</button><button id="endGroover" onclick="playSound();">Pause Groover</button></div><br><br><br>
+
+        
+        
+        <button id="vinylTwo">Happy <br><br><div id="circle"></div><br>Birthday</button><br><br><br><br> <!--second record-->
+
+        <audio controls id ="playMusicTwo">
+        <source src="Audio/hb metal scratch demo.wav" type="audio/mpeg">
+        </audio>
+    
+        <audio controls id="stopMusicTwo">
+        <source src="Audio/Record Scratch Sound Effect.mp3" type="audio/mpeg">
+        </audio>
+    
+        <div class="holder"><button id="groover" onclick="activateSoundTwo();">Activate Groover</button><button id="endGroover" onclick="playSoundTwo();">Pause Groover</button></div> <br><br><br>
+
+        
+        
+        <button id="vinylThree">Happy<br><br><div id="circle"></div><br>Birthday</button><br><br><br><br> <!--third record-->
+
+        <audio controls id ="playMusicThree">
+        <source src="Audio/hb piano scratch demo.wav" type="audio/mpeg">
+        </audio>
+    
+        <audio controls id="stopMusicThree">
+        <source src="Audio/Record Scratch Sound Effect.mp3" type="audio/mpeg">
+        </audio>
+    
+        <div class="holder"><button id="groover" onclick="activateSoundThree();">Activate Groover</button><button id="endGroover" onclick="playSoundThree();">Pause Groover</button></div> <br><br><br>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

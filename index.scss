@@ -1,0 +1,645 @@
+//standard variables
+$background-color: #1E0428;
+$heading-color: rgb(226, 54, 169);
+$navigation-border: .25rem solid #8e2dcc;
+$navigation-box-shadow: 0rem 0rem .8rem #8e2dcc;
+
+
+
+*, *::before, *::after { //includes padding and border in width specifications
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='154.9' stroke-opacity='0.2' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg transform='scale(0.739)' style='transform-origin:center'%3E%3Cg transform='rotate(63 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-118.4 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%232F1ACC' href='%23a' transform='rotate(7.4 0 0) scale(1.074)'/%3E%3Cuse stroke='%233919bf' href='%23a' transform='rotate(14.8 0 0) scale(1.148)'/%3E%3Cuse stroke='%234317b1' href='%23a' transform='rotate(22.2 0 0) scale(1.222)'/%3E%3Cuse stroke='%234d16a4' href='%23a' transform='rotate(29.6 0 0) scale(1.296)'/%3E%3Cuse stroke='%23571497' href='%23a' transform='rotate(37 0 0) scale(1.37)'/%3E%3Cuse stroke='%2361138a' href='%23a' transform='rotate(44.4 0 0) scale(1.444)'/%3E%3Cuse stroke='%236b127c' href='%23a' transform='rotate(51.8 0 0) scale(1.518)'/%3E%3Cuse stroke='%2375106f' href='%23a' transform='rotate(59.2 0 0) scale(1.592)'/%3E%3Cuse stroke='%237e0f62' href='%23a' transform='rotate(66.6 0 0) scale(1.666)'/%3E%3Cuse stroke='%23880d55' href='%23a' transform='rotate(74 0 0) scale(1.74)'/%3E%3Cuse stroke='%23920c47' href='%23a' transform='rotate(81.4 0 0) scale(1.814)'/%3E%3Cuse stroke='%239c0b3a' href='%23a' transform='rotate(88.8 0 0) scale(1.888)'/%3E%3Cuse stroke='%23a6092d' href='%23a' transform='rotate(96.2 0 0) scale(1.962)'/%3E%3Cuse stroke='%23b00820' href='%23a' transform='rotate(103.6 0 0) scale(2.036)'/%3E%3Cuse stroke='%23ba0612' href='%23a' transform='rotate(111 0 0) scale(2.11)'/%3E%3Cuse stroke='%23C40505' href='%23a' transform='rotate(118.4 0 0) scale(2.184)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+//heading
+#main_heading {
+    text-align: center;
+    font-size: 4rem;
+    color: $heading-color;
+    font-family: headingFont;
+    text-decoration: underline;
+    text-shadow: 0rem 0rem .2rem;
+}
+
+
+
+//navigation
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border: $navigation-border;
+    box-shadow: $navigation-box-shadow;
+}
+
+.navBox {
+    width: 100%;
+    font-size: 2.25rem;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+    font-family: headingFont;
+    text-decoration: underline solid #8e2dcc;
+    text-shadow: 0rem 0rem .1rem;
+}
+
+#nav1 {
+    border: .25rem solid #8e2dcc;
+}
+
+.navHover:hover {
+    cursor: pointer;
+    background-color: #CC3F2D;
+    color: #2dbacc;
+    text-decoration: underline solid rgb(0, 70, 128);
+}
+
+#nav2 {
+    border: .25rem solid #8e2dcc;
+}
+
+#nav3 {
+    border: .25rem solid #8e2dcc;
+}
+
+#nav4 {
+    border: .25rem solid #8e2dcc;
+}
+
+.nav-active {
+    color: #2dbacc;
+    background-color: #CC3F2D;
+}
+
+.nav-active:hover {
+    text-decoration: underline solid #8e2dcc;
+    cursor: default;
+}
+
+
+
+//this is the vinyl
+#vinyl { 
+    display: block;
+    margin: auto;
+    background-color: rgb(45, 186, 204, .75);
+    color: #CC3F2D;
+    width: 30rem;
+    height: 30rem;
+    border: 1rem solid #8e2dcc;
+    border-radius: 50%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: recordFont-3;
+    box-shadow: 0rem 0rem .8rem #8e2dcc;
+    text-shadow: 0rem -.5rem 0rem #CC3F2D;
+}
+
+#vinylTwo { 
+    display: block;
+    margin: auto;
+    background-color: rgb(188, 198, 204, .75);
+    color: rgb(136, 29, 29);
+    width: 30rem;
+    height: 30rem;
+    border: 1rem solid black;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: metalMusic;
+    box-shadow: 0rem 0rem 5rem black;
+}
+
+#vinylThree { 
+    display: block;
+    margin: auto;
+    background-color: rgba(255, 217, 0, .5);
+    color: white;
+    width: 30rem;
+    height: 30rem;
+    border: 1rem solid black;
+    border-radius: 50%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: recordFont-2;
+    box-shadow: 0rem 0rem .8rem white;
+}
+
+//inside the record circle
+#circle {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 3rem solid black;
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+
+
+/*(this is for album cover selection) #groover {
+    display: block;
+    margin: auto;
+    background-color: purple;
+    color: orange;
+    width: 30rem;
+    height: 30rem;
+    border: 1rem solid blue;
+    font-size: 5rem;
+}*/
+
+//holds music buttons
+.holder {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//music buttons
+#groover {
+    display: flex;
+    background-color: #8e2dcc;
+    color: #2dbacc;
+    border: .25rem solid #2dbacc;
+    margin-right: 5rem;
+    font-family: buttonFont;
+    font-size: 2rem;
+}
+
+#endGroover {
+    display: flex;
+    background-color: #8e2dcc;
+    border: .25rem solid ;
+    color: #2dbacc;
+    font-family: buttonFont;
+    font-size: 2rem;
+}
+
+
+//when hovering over buttons
+#groover:hover {
+    cursor: pointer;
+    border: .3rem solid #8e2dcc;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+}
+
+#endGroover:hover {
+    cursor: pointer;
+    border: .3rem solid #8e2dcc;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+}
+
+
+//when buttons are pressed/held down
+#groover:focus {
+    border: .3rem solid #2dbacc;
+    background-color: #8e2dcc;
+    color: #CC3F2D;
+}
+
+#endGroover:focus {
+    border: .3rem solid #2dbacc;
+    background-color: #8e2dcc;
+    color: #CC3F2D;
+}
+
+#groover:hover:not(focus) {
+    cursor: pointer;
+    border: .3rem solid #8e2dcc;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+}
+
+#endGroover:hover:not(focus) {
+    cursor: pointer;
+    border: .3rem solid #8e2dcc;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+}
+
+
+
+//audio controls
+#playMusic {
+    display: none;
+    width: 0;
+}
+
+#stopMusic {
+    display: none;
+    width: 0;
+}
+
+#playMusicTwo {
+    display: none;
+    width: 0;
+}
+
+#stopMusicTwo {
+    display: none;
+    width: 0;
+}
+
+#playMusicThree {
+    display: none;
+    width: 0;
+}
+
+#stopMusicThree {
+    display: none;
+    width: 0;
+}
+
+
+
+//animation classes
+.recordSpin {
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transition: linear;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+}
+
+.recordSlow {
+    animation-name: recordStop;
+    transition: linear;
+    animation-duration: .25s;
+    animation-timing-function: linear;
+}
+
+
+
+//animations
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes recordStop {
+    0% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes switchSlide {
+    0% {
+        opacity: 0%;
+    }
+}
+
+
+
+//fonts
+@font-face {
+    src: url('Fonts/Royalacid.ttf');
+    font-family: headingFont;
+}
+
+@font-face {
+    src: url('Fonts/Fridays.ttf');
+    font-family: buttonFont;
+}
+
+@font-face {
+    src: url('Fonts/nutellaBold.ttf');
+    font-family: recordFont;
+}
+
+@font-face {
+    src: url('Fonts/Vogue.ttf');
+    font-family: recordFont-2;
+}
+
+@font-face {
+    src: url('Fonts/Simpsonfont\ DEMO.otf');
+    font-family: recordFont-3;
+}
+
+@font-face {
+    src: url('Fonts/Zippo.ttf');
+    font-family: metalMusic;
+}
+
+@font-face {
+    src: url('Fonts/IMPOS0__.ttf');
+    font-family: glitch;
+}
+
+
+
+
+/* gallery stuff */
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+}
+
+.galleryText {
+    text-align: center;
+    color: #2dbacc;
+    font-family: headingFont;
+    font-size: 3rem;
+}
+
+.galleryContainer {
+    display: none;
+    animation-name: switchSlide;
+    animation-duration: 1s;
+}
+
+.galleryImages {
+    width: 20rem;
+    height: 25rem;
+    border: .25rem solid #CC3F2D;
+}
+
+.galleryImages-2 {
+    width: 30rem;
+    height: 25rem;
+    border: .25rem solid #CC3F2D;
+}
+
+.galleryImages-3 {
+    width: 15rem;
+    height: 25rem;
+    border: .25rem solid #CC3F2D;
+}
+
+.galleryImages-4 {
+    width: 12rem;
+    height: 25rem;
+    border: .25rem solid #CC3F2D;
+}
+
+.arrowSelection {
+    cursor: pointer;
+    margin: auto;
+    font-size: 5rem;
+    user-select: none;
+    color: #2dbacc;
+}
+
+.arrowSelection:hover {
+    color: #CC3F2D;
+}
+
+#baileyIcon {
+    width: 20rem;
+    height: 20rem;
+    border: .25rem solid #CC3F2D;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+/* compliment generator section */
+
+/*button to generate compliments*/
+#numberGenerator {
+    display: flex;
+    background-color: #8e2dcc;
+    color: #2dbacc;
+    border: .25rem solid #2dbacc;
+    margin-right: 5rem;
+    font-family: buttonFont;
+    font-size: 2rem;
+}
+
+#numberGenerator:hover {
+    cursor: pointer;
+    border: .3rem solid #8e2dcc;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+}
+
+#numberGenerator:active {
+    border: .3rem solid #2dbacc;
+    background-color: #8e2dcc;
+    color: #CC3F2D;
+}
+
+/* displays the compliments */
+#complimentDisplay {
+    text-align: center;
+    background-color: #2dbacc;
+    color: #CC3F2D;
+    font-size: 2rem;
+    font-family: recordFont;
+    border: .5rem solid #8e2dcc;
+    width: 50rem;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* holds the compliment generator */
+.holder-2 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* light mode stuff */
+
+#lightSwitch {
+    background-color: #8e2dcc;
+    color: #2dbacc;
+    border: .25rem solid #2dbacc;
+    margin-right: 5rem;
+    font-family: buttonFont;
+    font-size: 2rem;
+    display: flex;
+    margin: auto;
+}
+
+#lightSwitch:hover {
+    cursor: pointer;
+    border: .3rem solid #CC3F2D;
+    background-color: #2dbacc;
+    color: #8e2dcc;
+}
+
+.lightMode {
+    background-color: #2017FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23d200ce'/%3E%3Cstop offset='1' stop-color='%23d200ce' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234a02e1'/%3E%3Cstop offset='1' stop-color='%234a02e1' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239d016e'/%3E%3Cstop offset='1' stop-color='%239d016e' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%232017FF'/%3E%3Cstop offset='1' stop-color='%232017FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%238E0000'/%3E%3Cstop offset='1' stop-color='%238E0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236A03AC'/%3E%3Cstop offset='1' stop-color='%236A03AC' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+    #main_heading {
+        text-align: center;
+        font-size: 4rem;
+        color: rgb(54, 206, 226);
+        font-family: headingFont;
+        text-decoration: underline;
+        text-shadow: 0rem 0rem .2rem;
+    }
+}
+
+
+
+
+//birthday wishes
+#radioFrame {
+    display: block;
+    margin: auto;
+    background-color: tan;
+    color: orange;
+    width: 18rem;
+    height: 35rem;
+    border: .5rem solid black;
+    font-size: 5rem;
+}
+
+#radioBrand {
+    color: black;
+    font-size: 1.2rem;
+    font-family: recordFont-3;
+    padding-bottom: 0;
+    text-align: center;
+    text-decoration: solid underline black;
+}
+
+#radioDialRight {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    float: right;
+    border: .2rem dashed #d4af37;
+    color: white;
+    margin-right: .5rem;
+    font-family: recordFont-2;
+}
+
+#radioDialRight:hover {
+    cursor: pointer;
+    border: .2rem solid rgb(0, 0, 0);
+    background-color: rgb(47, 80, 53);
+}
+
+#radioDialLeft {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    border: .2rem dashed #d4af37;
+    color: white;
+    float: left;
+    margin-left: .5rem;
+    font-family: recordFont-2;
+}
+
+#radioDialLeft:hover {
+    cursor: pointer;
+    border: .2rem solid rgb(0, 0, 0);
+    background-color: rgb(47, 80, 53);
+}
+
+#radioSpeaker {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 13rem;
+    height: 20rem;
+    background-color: black;
+    border: .3rem solid #d4af37;
+    clear: both;
+    position: relative;
+    background-clip: content-box;
+}
+
+#brandCircle {
+    color: black;
+    font-size: 1rem;
+    font-family: recordFont-2;
+    text-align: center;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -3rem 0 0 -2.25rem;
+    width: 4.5rem;
+    height: 6rem;
+    line-height: 6rem;
+    background-color: #d4af37;
+    position: absolute;
+    border: solid rgba(206, 181, 181, 0.13) .2rem;
+    background-clip: content-box;
+}
+
+#hertz {
+    color: rgb(218, 199, 199);
+    text-shadow: rgb(184, 176, 176) 0rem 0rem .1rem;
+    font-size: 1.5rem;
+    font-family: glitch;
+    padding-bottom: 0;
+    text-align: center;
+    clear: both;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: -.5rem;
+    display: block;
+    border-top: solid black .5rem;
+    border-bottom: solid black .5rem;
+    background-color: rgb(47, 80, 53);
+    background-clip: content-box;
+}
+
+#radioOn {
+    display: none;
+    width: 0;
+}
+
+#radioOnTwo {
+    display: none;
+    width: 0;
+}
+
+#radioOnThree {
+    display: none;
+    width: 0;
+}
+
+#radioOnFour {
+    display: none;
+    width: 0;
+}
+
+#radioOnFive {
+    display: none;
+    width: 0;
+}
+
+#radioOff {
+    display: none;
+    width: 0;
+}

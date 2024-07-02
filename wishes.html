@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailey's Birthday - Birthday Wishes</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="Images/bailey_icon.png" type="image/gif" sizes="32x32">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main_heading">Happy Birthday Bailey!</h1>
+    
+        <div class="navigation">
+            <button id="lightSwitch" onclick="light()">Alt Mode</button>
+            <button id="nav1" class="navBox navHover" onclick="window.location.href='index.html'">Happy Birthday!</button>
+            <button id="nav2" class="navBox navHover nav-active" onclick="window.location.href='wishes.html'">Birthday Wishes</button>
+            <button id="nav3" class="navBox navHover" onclick="window.location.href='gallery.html'">Gallery</button>
+            <button id="nav4" class="navBox navHover" onclick="window.location.href='compliment.html'">Compliment Generator</button>
+        </div><br><br><br><br>
+
+    <div id="radioFrame">
+        <p id="radioBrand">Birthday Radio Messages</p>
+        <div id="hertz">07.02 MHz</div>
+        <button id="radioDialRight" onclick="killSwitch()">Off</button>
+        <button id="radioDialLeft" onclick="activateRadio()">On</button>
+        <div id="radioSpeaker"><div id="brandCircle">HB</div>
+    </div>
+
+    <audio controls id ="radioOn">
+    <source src="Audio/bella_birthday_wish.m4a" type="audio/mpeg">
+    </audio>
+
+    <audio controls id ="radioOnTwo">
+    <source src="Audio/hb scratch demo 1 (my style).wav" type="audio/mpeg">
+    </audio>
+
+    <audio controls id ="radioOnThree">
+    <source src="Audio/logan_birthday_wish.m4a" type="audio/mpeg">
+    </audio>
+
+    <audio controls id ="radioOnFour">
+    <source src="Audio/peyton_birthday_wish.m4a" type="audio/mpeg">
+    </audio>
+
+    <audio controls id ="radioOnFive">
+    <source src="Audio/Quadeca & brakence - A La Carte (Official Music Video).mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls id="radioOff">
+    <source src="Audio/unplug.wav" type="audio/mpeg">
+    </audio>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
