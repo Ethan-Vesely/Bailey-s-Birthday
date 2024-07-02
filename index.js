@@ -162,13 +162,13 @@ function activateSound() { //function for playing the sound
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 8: 
-            number = '"Leo-4" - Leo';
+            number = '"Looking great today &#x1F609;" - Leo';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 9: 
-                number = '"Leo-5" - Leo';
+                number = '"You are always right" - Leo';
                 complimentHolder.splice(index, 1);
                 complimentDisplay.innerHTML = number;
                 complimentDisplay.style = "color: #CC3F2D";
@@ -234,31 +234,31 @@ function activateSound() { //function for playing the sound
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 20: //ethan cases 20-24
-            number = 'Ethan-1';
+            number = '"You are an amazing and supportive person" - Ethan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 21:
-            number = 'Ethan-2';
+            number = '"You have a contagious smile and laugh" - Ethan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
         case 22:
-            number = 'Ethan-3';
+            number = '"You have a great voice" - Ethan';
             complimentHolder.splice(index, 1);
             complimentDisplay.innerHTML = number;
             complimentDisplay.style = "color: #CC3F2D";
     break;
             case 23: 
-                number = 'Ethan-4';
+                number = '"Your company always brightens my day" - Ethan';
                 complimentHolder.splice(index, 1);
                 complimentDisplay.innerHTML = number;
                 complimentDisplay.style = "color: #CC3F2D";
     break;
         case 24: 
-                number = 'Ethan-5';
+                number = '"I like your style" - Ethan';
                 complimentHolder.splice(index, 1);
                 complimentDisplay.innerHTML = number;
                 complimentDisplay.style = "color: #CC3F2D";
