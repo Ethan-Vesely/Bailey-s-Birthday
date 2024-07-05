@@ -593,15 +593,15 @@ body {
     box-shadow: none;
   }
   #complimentDisplay {
-    width: 30rem;
-    margin-top: 9rem;
+    width: 25rem;
+    margin-top: 3rem;
     position: absolute;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   #numberGenerator {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
   .galleryImages {
     width: 13rem;
