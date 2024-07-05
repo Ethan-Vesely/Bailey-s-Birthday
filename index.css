@@ -593,8 +593,8 @@ body {
     box-shadow: none;
   }
   #complimentDisplay {
-    width: 25rem;
-    margin-top: 3rem;
+    width: 22rem;
+    margin-top: 7rem;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -603,6 +603,7 @@ body {
   }
   #numberGenerator {
     margin-top: 12rem;
+    font-size: 1.5rem;
   }
   .galleryImages {
     width: 13rem;
