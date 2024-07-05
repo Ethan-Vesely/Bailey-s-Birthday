@@ -422,6 +422,7 @@ body {
     margin-right: 5rem;
     font-family: buttonFont;
     font-size: 2rem;
+    margin-top: 10rem;
 }
 
 #numberGenerator:hover {
@@ -439,6 +440,11 @@ body {
 
 /* displays the compliments */
 #complimentDisplay {
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
     text-align: center;
     background-color: #2dbacc;
     color: #CC3F2D;
@@ -642,4 +648,48 @@ body {
 #radioOff {
     display: none;
     width: 0;
+}
+
+
+
+//mobile stuff
+@media only screen and (max-width: 600px) {
+    .navigation {
+        display: block;
+        margin: auto;
+        border: none;
+        box-shadow: none;
+    }
+    #complimentDisplay {
+        display: block;
+        margin: auto;
+        width: 30rem;
+        position: absolute;
+        margin-top: -7rem;
+        top: 90%;
+        left: 90%;
+        transform: translate(-90%, -90%);
+    }
+    #numberGenerator {
+        margin-top: 7rem;
+    }
+    .galleryImages {
+        width: 15rem;
+        height: 20rem;
+    }
+    .galleryImages-2 {
+        width: 20rem;
+        height: 15rem;
+    }
+    .galleryImages-3 {
+        width: 13rem;
+        height: 18rem;
+    }
+
+    .slideshow {
+        position: absolute;
+        top: 40%;
+        transform: (-40%, -40%);
+        margin-top: 10rem;
+    }
 }
